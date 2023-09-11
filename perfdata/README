@@ -1,0 +1,32 @@
+Nathan Zacharjak a1704695
+
+This folder contains all output of all timing tests for the
+histogram program.
+
+The program was run for data sizes:
+500
+500,000
+500,000,000
+and
+5,000,000,000
+
+Each time, the program was given 1, 2, then 4 cores to run,
+resulting in 3 output files per test, one for each no. of 
+cores.
+
+Each test was run 3 times, resulting in a total of 9 test 
+files for each data size number.
+
+The program was complied and run on the university ssh system, using the commands:
+
+mpicc -g -Wall -std=c11 -o histogram histogram.c
+to compile
+
+mpiexec histogram -n [core number] < params > ./perfdata/core[core number]data[data size][test number]
+to run for each test
+
+A 2 or 3 on the end of the file name denotes the test number, the first tests don't have a number on the end.
+So the 3 tests for 1 core and a data size of 500 are:
+core1data500
+core1data5002
+core1data5003

@@ -1,0 +1,10 @@
+Enter the number of bins
+Enter the minimum measurement
+Enter the maximum measurement
+Enter the number of data
+[uss:16789] *** An error occurred in MPI_Scatter
+[uss:16789] *** reported by process [18446744069876416513,0]
+[uss:16789] *** on communicator MPI_COMM_WORLD
+[uss:16789] *** MPI_ERR_COUNT: invalid count argument
+[uss:16789] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[uss:16789] ***    and potentially your MPI job)
